@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Pragna Soruppu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Optima:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Neutraface+Text:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Neutraface Text', sans-serif;
+            background-color: #FFFBE8;
+            color: #2966AC;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-family: 'Neutraface Text', sans-serif;
+            font-size: 24px;
+            font-weight: medium;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2966AC;
+            padding-bottom: 5px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: #f7da59;
+            left: 0;
+            bottom: -5px;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f7da59;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a.active {
+            color: #f7da59;
+        }
+
+        nav ul li a.active::after {
+            width: 100%;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .about-section .about-text {
+            flex: 2;
+        }
+
+        .about-section .about-text h1 {
+            font-family: 'Optima', serif;
+            font-size: 40px;
+            margin-bottom: 30px;
+            margin-top: 100px;
+        }
+
+        .about-section .about-text p {
+            font-size: 18px;
+            color: #2966AC;
+            margin-bottom: 20px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: #f7da59;
+            color: #2966AC;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            font-weight: medium;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #2966AC; 
+            color: #f7da59; 
+        }
+
+        .about-section .about-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; 
+            margin-right: -155px;
+        }
+        .about-section {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            height: calc(100vh - 120px); 
+            margin-bottom: 0;
+            margin-top: -100px;
+        }
+
+        .about-section .about-text {
+            flex: 1;
+            padding-right: 20px; 
+        }
+
+        .about-section .about-image {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .about-section .about-image img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: -20px;
+            background-color: #2966AC;
+            color: #FFFBE8;
+        }
+
+        .footer-social-icons {
+            margin-top: -10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-social-icons a img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .footer-social-icons a:hover img {
+            transform: scale(1.1)
+
+        }
+
+        .email-link {
+            color: #FFFBE8; 
+            text-decoration: none; 
+            font-weight: medium; 
+            transition: color 0.3s ease, text-decoration 0.3s ease; 
+        }
+
+        .email-link:hover {
+            color: #f7da59; 
+            text-decoration: underline; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Pragna Soruppu</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mywork.html">My work</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="about-section">
+                <div class="about-text">
+                    <h1>Hey there!</h1>
+                    <p>I'm a 3rd-Year B.Design student with a passion for UI/UX and Interaction Design. Currently studying at PES University, Bangalore.</p>
+                    <p>I have a deep interest in creating user experiences that merge aesthetics with functionality. Alongside my academic journey, I explore the world through the lens of photography, capturing moments that fuel my creative process.</p>
+                    <p>I thrive in collaborative environments, where my effective communication and teamwork skills help drive projects forward. I'm always eager to learn from industry professionals and bring fresh ideas to the table. I look forward to contributing my skills while continuously expanding my knowledge in the ever-evolving design landscape.</p>
+                    <a href="contact.html" class="contact-btn">Contact Me</a>
+                </div>
+                <div class="about-image">
+                    <img src="PSP_3583 3 2.png" alt="About Me">
+                </div>
+            </section>
+        </main>
+     </div>
+
+     <footer>
+        <p>Let's Connect!</p> 
+        <p>
+            <a href="mailto:pragnasoruppu08@gmail.com" class="email-link">email: pragnasoruppu08@gmail.com</a>
+        </p>
+        <br>
+        <div class="footer-social-icons">
+            <a href="https://www.linkedin.com/in/pragna-soruppu-40b609285/" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.behance.net/pragnasoruppu" target="_blank">
+                <img src="behance.png" alt="Behance">
+            </a>
+            <a href="https://www.instagram.com/pragna_soruppu/profilecard" target="_blank">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+        </div>    
+        <p>All Rights Reserved</p>
+    </footer>
+</body>
+</html>
